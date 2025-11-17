@@ -1,6 +1,7 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 
 export default function Header() {
+  const location = useLocation();
   return (
     <>
       <header className="flex items-center border-b border-border">
@@ -14,12 +15,13 @@ export default function Header() {
               className: "font-bold",
             }}
             viewTransition={{
-              types: ({ fromLocation }) =>
-                fromLocation?.href === "/"
+              types: () => {
+                return location?.href === "/"
                   ? ["slide-left"]
-                  : fromLocation?.href === "/about"
+                  : location?.href === "/about"
                     ? ["slide-right"]
-                    : [],
+                    : []
+              },
             }}
           >
             Blog
