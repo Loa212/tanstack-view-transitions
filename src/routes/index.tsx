@@ -12,7 +12,7 @@ function App() {
       <br />
       <p>Navigate to other pages to see it in action!</p>
       <br />
-      <p>I'm testing autodeploy now!</p>
+      <p>I'm testing autodeploy now! and I added the gh app</p>
     </div>
   );
 }
