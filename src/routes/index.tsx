@@ -11,6 +11,8 @@ function App() {
       <p>Learn how to use view transitions.</p>
       <br />
       <p>Navigate to other pages to see it in action!</p>
+      <br />
+      <p>I'm testing autodeploy now!</p>
     </div>
   );
 }
